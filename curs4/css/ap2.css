@@ -14,7 +14,8 @@ body {
   border: 2px solid #000;
 }
 
-.box:nth-child(2n) {
+.box:nth-child(5n) {
+  visibility: hidden;
   background-color: rgb(53, 130, 218);
   color: #000;
 }
@@ -23,7 +24,8 @@ body {
   width: 600px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: 100px 100px 100px 100px 100px;
   grid-gap: 0px;
 }
 
